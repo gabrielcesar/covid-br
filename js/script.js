@@ -74,6 +74,3 @@ fetch("https://raw.githubusercontent.com/gabrielcesar/covid-br/master/data/gener
         document.getElementById('last_update_time').innerHTML = data['last_update_time']
     })
 
-function init()
-{
-}
