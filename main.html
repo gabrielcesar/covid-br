@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/arwen.css">
+    <meta charset="utf-8">
+    <meta name="author" content="Gabriel Cesar">
+    <meta name="description" content="Corona Virus COVID-19">
+    <meta name="keywords" content="Corona, Virus, COVID-19">
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Corona Virus - COVID-19 - Brasil</title>
+</head>
+
+<body onload="init()">
+
+<div class="arwen_tooltip" id="arwen_tooltip"></div>
+<div class="arwen_navbar">
+    <span class="arwen_color_darkred">CORONA</span> Vírus &bull; COVID-19  &bull; Brasil
+    <div class="arwen_about" onclick="">Sobre</div>
+</div>
+
+<div id="arwen_box_left" class="arwen_box_left">
+    Confirmados<br>
+    <span class="arwen_color_orange arwen_font_size_64" id="box_total_confirmed"></span>
+</div>
+<div id="arwen_menu" class="arwen_menu"></div>
+
+<div id="arwen_main" class="arwen_main"></div>
+<div id="arwen_update" class="arwen_update">
+    ATUALIZADO EM <span class="arwen_color_999 arwen_font_size_11" id="last_update_date"></span> 
+    ÀS <span class="arwen_color_999 arwen_font_size_11" id="last_update_time"></span>
+</div>
+
+<div id="arwen_box_right" class="arwen_box_right">
+    Mortes<br>
+    <span class="arwen_color_red arwen_font_size_64" id="box_total_death"></span>
+</div>
+<div id="arwen_menu_right" class="arwen_menu_right"></div>
+
+<div class="arwen_footer">
+    <marquee class="arwen_color_999">
+        <!-- Casos Suspeitos <span class="arwen_color_yellow" id="total_suspect"></span> &bull; -->
+        Casos Confirmados <span class="arwen_color_orange" id="total_confirmed"></span> &bull; 
+        <!-- Casos Recuperados <span class="arwen_color_green" id="total_recovered"></span> &bull; -->
+        Mortes <span class="arwen_color_red" id="total_death"></span> &bull; 
+        A melhor forma de prevenção é a Informação.
+    </marquee>
+</div>
+
+</body>
+</html>
+
