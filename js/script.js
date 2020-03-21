@@ -7,7 +7,8 @@
 // state, code, suspect, confirmed, recovered, death
 var states = []
 
-fetch("https://raw.githubusercontent.com/gabrielcesar/covid-br/master/data/covid.json")
+//fetch("https://raw.githubusercontent.com/gabrielcesar/covid-br/master/data/covid.json")
+fetch("https://gabrielcesar.github.io/covid-br/data/covid.json")
     .then(response => response.json())
     .then(function(data)
     {
