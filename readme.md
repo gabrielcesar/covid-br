@@ -9,7 +9,7 @@ Acesse em: [gabrielcesar.github.io/covid-br/](https://gabrielcesar.github.io/cov
 ## Como atualizar
 Você pode colaborar e enviar os status mais recente do seu estado.  
 
-Basta ```clonar``` o projeto e utilizando o programa ```covid.py``` que está na pasta ```data``` atualizar os dados do seu estado. Em seguida enviar seu ```Pull Request```. Ou abrir um [```Issue```](https://github.com/gabrielcesar/covid/issues/new/choose) enviando os dados e a fonte.
+Basta ```clonar``` o projeto e utilizando o programa ```covid.py``` que está na pasta ```data``` atualizar os dados do seu estado. Em seguida enviar seu ```Pull Request```. Ou abrir um [```Issue```](https://github.com/gabrielcesar/covid-br/issues/new/choose) enviando os dados e a fonte.
 
 ```
 Uso:
