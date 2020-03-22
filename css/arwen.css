@@ -56,7 +56,7 @@ pre
     position: relative;
     text-align: right;
     top: 0;
-    width: 50px;
+    width: 40px;
     margin-right: 16px;
 }
 
@@ -95,6 +95,8 @@ pre
 	top: 60px;
 	width: 256px;
 }
+
+.arwen_death { display: none; }
 
 .arwen_icon
 {
@@ -242,6 +244,43 @@ pre
     width: auto;
 }
 
+.arwen_share { display: none; }
+
+.arwen_share_button 
+{ 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 70% ;
+    float: left;
+    height: 35px;
+    position: absolute;
+    top: 15px;
+    width: 32px; 
+}
+
+.arwen_share_facebook
+{
+    background-image: url('../images/facebook.svg');
+    left: calc(50% - 40px);
+}
+
+.arwen_share_twitter
+{
+    background-image: url('../images/twitter.svg');
+    left: calc(50% + 8px);
+}
+
+.arwen_share_label 
+{ 
+    color: #777;
+    font-size: 11px;
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    position: relative;
+    width: 100%; 
+}
+
 .arwen_tooltip 
 { 
     background-color: #555; 
@@ -278,6 +317,94 @@ pre
     z-index: 1;
 }
 
+@media screen and (max-width: 1024px)
+{
+    body
+    {
+        background-color: 272822;
+        overflow: auto;
+    }
+
+    .arwen_main
+    {
+        left: 0;
+        top: 0;
+        position: relative;
+        width: 100%;
+    }
+
+    .arwen_box_left
+    { 
+        float: left;
+        position: relative; 
+        left: 0;
+        width: 50%;
+        top: 0;
+    }
+
+    .arwen_menu
+    { 
+        border-right: 0;
+        float: left;
+        height: 50%;
+        position: relative; 
+        width: 100%;
+        top: 0;
+    }
+
+    .arwen_box_right
+    { 
+        border-left: 0;
+        float: left;
+        left: 0;
+        position: relative; 
+        top: 0;
+        width: 50%;
+    }
+
+    .arwen_update 
+    {
+        background-color: #444;
+        border-top: 1px solid #333;
+        float: left;
+        height: 32px;
+        left: 0;
+        line-height: 32px;
+        margin: 0;
+        position: relative; 
+        text-align: center;
+        top: 0;
+        width: 100%;
+    }
+
+    .arwen_share
+    { 
+        background-color: #444;
+        border-top: 1px solid #333;
+        display: block;
+        float: left;
+        height: 50px;
+        left: 0;
+        line-height: 50px;
+        margin: 0;
+        position: relative; 
+        text-align: center;
+        text-transform: uppercase;
+        top: 0;
+        width: 100%;
+    }
+
+    .arwen_confirmed { color: orange; }
+    .arwen_footer { display: none; }
+    .arwen_menu_right { display: none; }
+
+    .arwen_death 
+    { 
+        color: #ff7979; 
+        display: block;
+    }
+}
+
 .arwen_color_999 { color: #999; }
 .arwen_color_darkred { color: #ff0000; }
 .arwen_color_green { color: lightgreen; }
@@ -286,3 +413,4 @@ pre
 .arwen_color_yellow { color: yellow; }
 .arwen_font_size_11 { font-size: 11px; }
 .arwen_font_size_64 { font-size: 64px; }
+
