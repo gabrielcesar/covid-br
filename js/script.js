@@ -48,7 +48,7 @@ fetch("https://gabrielcesar.github.io/covid-br/data/covid.json")
             })
 
             document.getElementById(states[state]['state']).addEventListener("mouseout", function(){ tooltip_close()})
-            document.getElementById('arwen_menu').innerHTML += '<div class=\'arwen_item\'><div class=\'arwen_icon arwen_flag_' + states[state]['code'] + '\'></div>' + states[state]['state'] + '<div class=\'arwen_amount arwen_death\'>0</div><div class=\'arwen_amount arwen_confirmed\'>' + states[state]['confirmed'] + '</div></div>'
+            document.getElementById('arwen_menu').innerHTML += '<div class=\'arwen_item\'><div class=\'arwen_icon arwen_flag_' + states[state]['code'] + '\'></div>' + states[state]['state'] + '<div class=\'arwen_amount arwen_death\'>' + states[state]['death'] + '</div><div class=\'arwen_amount arwen_confirmed\'>' + states[state]['confirmed'] + '</div></div>'
             document.getElementById('arwen_menu_right').innerHTML += '<div class=\'arwen_item\'><div class=\'arwen_icon arwen_flag_' + states[state]['code'] + '\'></div>' + states[state]['state'] + '<div class=\'arwen_amount\'>' + states[state]['death'] + '</div></div>'
             states_color.push({state: states[state]['state'], confirmed: parseInt(states[state]['confirmed'])})
         }
