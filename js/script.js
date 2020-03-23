@@ -56,7 +56,14 @@ fetch("https://gabrielcesar.github.io/covid-br/data/covid.json")
         states_color.sort(function(a, b){return a.confirmed - b.confirmed })
 
         for (let state_color = 0; state_color < states_color.length; state_color ++)
+        {
             document.getElementById(states_color[state_color]['state']).style.fill = colors[state_color]
+            //document.getElementById('arwen_bar').innerHTML += '<div class="arwen_bar_segment" style="background-color: ' + colors[state_color] + ';"></div>'
+        }
+
+        document.getElementById('arwen_min').innerHTML = states_color[0]['confirmed']
+        document.getElementById('arwen_max').innerHTML = states_color[states_color.length - 1]['confirmed']
+
     })
 
 // general

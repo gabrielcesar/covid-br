@@ -300,6 +300,59 @@ pre
     z-index: 2;
 }
 
+.arwen_bar_set
+{
+    color: #666; 
+    font-size: 11px; 
+    height: 24px;
+    left: 256px;
+    margin-top: -72px;
+    position: absolute; 
+    text-align: right; 
+    text-transform: uppercase; 
+    top: 100%;
+    width: 256px;
+    z-index: 1;
+}
+
+.arwen_bar
+{
+    background: linear-gradient(to right, #c1e583, yellow, #ff998f);
+    border-radius: 4px;
+    height: 8px;
+    float: left;
+    margin-top: -4px;
+    position: relative;
+    top: 50%;
+    width: 180px;
+}
+
+.arwen_min
+{
+    color: #c1e583;
+    height: 100%;
+    line-height: 24px;
+    float: left;
+    font-size: 11px;
+    position: relative;
+    margin-right: 6px;
+    text-align: right;
+    width: 32px;
+}
+
+.arwen_max
+{
+    color: #ff998f;
+    float: left;
+    font-size: 11px;
+    height: 100%;
+    line-height: 24px;
+    position: relative;
+    margin-left: 6px;
+    text-align: left;
+    width: 32px;
+}
+
 .arwen_update
 {
     color: #666; 
@@ -397,6 +450,7 @@ pre
     .arwen_confirmed { color: orange; }
     .arwen_footer { display: none; }
     .arwen_menu_right { display: none; }
+    .arwen_bar_set { display: none; }
 
     .arwen_death 
     { 
