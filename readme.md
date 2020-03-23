@@ -57,6 +57,7 @@ $ python3 PR 8 4 2 0
 ## Development by
 Gabriel Cesar  
 [github.com/gabrielcesar](https://github.com/gabrielcesar)  
+[linkedin.com/in/gabrielcesar1/](https://www.linkedin.com/in/gabrielcesar1/)
 
 ## Agradecimentos
 * [Python Brazil Group](https://www.facebook.com/groups/pythonbr/)  
