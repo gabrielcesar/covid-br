@@ -28,7 +28,7 @@ function tooltip_close()
 
 // state, code, suspect, confirmed, recovered, death
 var states = []
-states_color = []
+var states_color = []
 
 //fetch("https://raw.githubusercontent.com/gabrielcesar/covid-br/master/data/covid.json")
 fetch("https://gabrielcesar.github.io/covid-br/data/covid.json")
@@ -58,7 +58,15 @@ fetch("https://gabrielcesar.github.io/covid-br/data/covid.json")
         for (let state_color = 0; state_color < states_color.length; state_color ++)
         {
             document.getElementById(states_color[state_color]['state']).style.fill = colors[state_color]
+            //document.getElementById('arwen_tooltip_label').style.color = colors[state_color] 
             //document.getElementById('arwen_bar').innerHTML += '<div class="arwen_bar_segment" style="background-color: ' + colors[state_color] + ';"></div>'
+
+            /*
+            document.getElementById(states_color[state_color]['state']).addEventListener("mousemove", function(){ 
+                tooltip(event, '<div class=\'arwen_icon_tooltip arwen_flag_' + states_color[state_color]['state'] + '\'></div><span id=\'arwen_tooltip_label\'>' + states_color[state_color]['state'] + "</span><br>Confirmados <span class='arwen_color_orange'>0</span><br>Mortes <span class='arwen_color_red'>" + 0 + "</span>")
+                document.getElementById('arwen_tooltip_label').style.color = colors[state_color] 
+            })
+            */
         }
 
         document.getElementById('arwen_min').innerHTML = states_color[0]['confirmed']
