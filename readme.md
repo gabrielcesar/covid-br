@@ -53,11 +53,15 @@ $ python3 PR 8 4 2 0
 * [Brazil Labelled Map](https://en.wikipedia.org/wiki/States_of_Brazil#/media/File:Brazil_Labelled_Map.svg)
 * [Biohazard](https://en.wikipedia.org/wiki/Biological_hazard#/media/File:Biohazard_symbol_(black_and_yellow).png)
 
-
 ## Development by
 Gabriel Cesar  
 [github.com/gabrielcesar](https://github.com/gabrielcesar)  
-[linkedin.com/in/gabrielcesar1/](https://www.linkedin.com/in/gabrielcesar1/)
+[linkedin.com/in/gabrielcesar1/](https://www.linkedin.com/in/gabrielcesar1)
+
+Helton Biker
+[github.com/heltonbiker](https://github.com/heltonbiker)  
+
+Join Us! You can also help change people’s life. Engage in this cause!
 
 ## Agradecimentos
 * [Python Brazil Group](https://www.facebook.com/groups/pythonbr/)  

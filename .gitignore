@@ -3,3 +3,4 @@ venv
 __pycache__
 covid.sh 
 .DS_Store
+etc
