@@ -54,14 +54,16 @@ $ python3 PR 8 4 2 0
 * [Biohazard](https://en.wikipedia.org/wiki/Biological_hazard#/media/File:Biohazard_symbol_(black_and_yellow).png)
 
 ## Development by
-* Gabriel Cesar  
+* ![Gabriel Cesar](https://avatars1.githubusercontent.com/u/1204816?s=64&v=4)  
+Gabriel Cesar  
 [github.com/gabrielcesar](https://github.com/gabrielcesar)  
-[linkedin.com/in/gabrielcesar1/](https://www.linkedin.com/in/gabrielcesar1)
+[linkedin.com/in/gabrielcesar1](https://www.linkedin.com/in/gabrielcesar1/)
 
-* Helton Biker   
+* ![Helton Biker ](https://avatars0.githubusercontent.com/u/683725?s=64&v=4)  
+Helton Biker   
 [github.com/heltonbiker](https://github.com/heltonbiker)  
 
-Join Us! You can also help change people’s life. Engage in this cause!
+Sua colaboração é sempre Bem Vinda!  
 
 ## Agradecimentos
 * [Python Brazil Group](https://www.facebook.com/groups/pythonbr/)  
