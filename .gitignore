@@ -4,3 +4,4 @@ __pycache__
 covid.sh 
 .DS_Store
 etc
+.vscode
