@@ -38,7 +38,7 @@ fetch("https://gabrielcesar.github.io/covid-br/data/covid.json")
         for (var state = 0; state < data.length; state ++)
             states.push({'state': data[state]['state'], 'code': data[state]['code'], 'suspect': data[state]['suspect'], 'confirmed': data[state]['confirmed'], 'recovered': data[state]['recovered'], 'death': data[state]['death']})
 
-        document.getElementById('arwen_main').innerHTML = map
+        document.getElementById('arwen_main').innerHTML = stateBorders
 
         for (let state = 0; state < states.length; state ++ )
         {
