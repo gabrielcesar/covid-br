@@ -365,9 +365,10 @@ pre
     background: linear-gradient(to right, #c1e583, yellow, #ff998f);
     border-radius: 4px;
     height: 8px;
-    float: left;
     margin-top: -4px;
-    position: relative;
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
     top: 50%;
     width: 180px;
 }
@@ -377,10 +378,10 @@ pre
     color: #c1e583;
     height: 100%;
     line-height: 24px;
-    float: left;
     font-size: 11px;
-    position: relative;
-    margin-right: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
     text-align: right;
     width: 32px;
 }
@@ -388,12 +389,13 @@ pre
 .arwen_max
 {
     color: #ff998f;
-    float: left;
     font-size: 11px;
     height: 100%;
     line-height: 24px;
-    position: relative;
-    margin-left: 6px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: -32px;
     text-align: left;
     width: 32px;
 }
@@ -492,10 +494,38 @@ pre
         width: 100%;
     }
 
+    .arwen_chart_evolution_set
+    {
+        position: relative;
+        float: left;
+        left: 0;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .arwen_chart_evolution
+    {
+        width: 100%;
+        height: auto;
+    }
+
     .arwen_confirmed { color: orange; }
     .arwen_footer { display: none; }
     .arwen_menu_right { display: none; }
-    .arwen_bar_set { display: none; }
+
+    .arwen_bar_set 
+    { 
+        position: relative;
+        float: left;
+        left: 0;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
 
     .arwen_death 
     { 

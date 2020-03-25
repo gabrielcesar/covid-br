@@ -1,4 +1,5 @@
 var chart_evolution_svg = `
+<center>
 <svg 
     xmlns:svg="http://www.w3.org/2000/svg"
     xmlns="http://www.w3.org/2000/svg"
@@ -34,4 +35,5 @@ var chart_evolution_svg = `
     <path id="chart_path_confirmed" class="chart_path" transform="" stroke="orange" d="" />
     <g id="rects"></g>
 </svg>
+</center>
 `
