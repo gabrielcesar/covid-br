@@ -300,6 +300,51 @@ pre
     z-index: 2;
 }
 
+.arwen_chart_evolution_set
+{
+    background-color: #272822;
+    color: #666; 
+    left: 280px;
+    margin-top: -240px;
+    position: absolute; 
+    top: 100%;
+    height: calc(24px + 140px);
+    width: 220px;
+    z-index: 1;
+}
+
+.arwen_chart_evolution_label
+{
+    color: #777;
+    background-color: #343530;
+    font-size: 10px;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    position: relative; 
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.arwen_chart_evolution
+{
+    position: relative; 
+    float: left;
+    height: 140px;
+    width: 220px;
+}
+
+/*
+.chart_path_confirmed
+{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    fill: none; stroke-width: 1; stroke-linecap: round;
+    animation: dash 5s linear forwards;
+}
+*/
+
 .arwen_bar_set
 {
     color: #666; 
@@ -465,6 +510,7 @@ pre
 .arwen_color_orange { color: orange; }
 .arwen_color_red { color: #ff7979; }
 .arwen_color_yellow { color: yellow; }
+.arwen_font_size_10 { font-size: 10px; }
 .arwen_font_size_11 { font-size: 11px; }
 .arwen_font_size_64 { font-size: 64px; }
 

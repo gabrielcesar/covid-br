@@ -6,12 +6,26 @@
     <link rel="stylesheet" href="css/arwen.css">
     <meta charset="utf-8">
     <meta name="author" content="Gabriel Cesar">
-    <meta name="description" content="Corona Virus COVID-19">
-    <meta name="keywords" content="Corona, Virus, COVID-19">
+    <meta name="description" content="Mapa com o status por Estado da Evolução do Corona Vírus no Brasil.">
+    <meta name="keywords" content="Corona, Virus, COVID-19, covid">
+    <meta name="title" content="Corona Virus - COVID-19 - Brasil">
     <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="js/chart_evolution.js"></script>
     <script type="text/javascript" src="js/stateBorders.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <title>Corona Virus - COVID-19 - Brasil</title>
+
+    <meta property="og:type" content="non_profit">
+    <meta property="og:url" content="https://gabrielcesar.github.io/covid-br/">
+    <meta property="og:title" content="Corona Virus - COVID-19 - Brasil">
+    <meta property="og:description" content="Mapa com o status por Estado da Evolução do Corona Vírus no Brasil."/>
+    <meta property="og:image" content="https://raw.githubusercontent.com/gabrielcesar/covid-br/master/images/covid.png"/>
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gabrielcesar.github.io/covid-br/">
+    <meta property="twitter:title" content="Corona Virus - COVID-19 - Brasil">
+    <meta property="twitter:description" content="Mapa com o status por Estado da Evolução do Corona Vírus no Brasil.">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/gabrielcesar/covid-br/master/images/covid.png">
 </head>
 
 <body>
@@ -35,6 +49,11 @@
 </div>
 
 <div id="arwen_menu" class="arwen_menu"></div>
+
+<div id="arwen_chart_evolution_set" class="arwen_chart_evolution_set">
+    <div id="arwen_chart_evolution_label" class="arwen_chart_evolution_label">Evolução da Pandemia no Brasil</div>
+    <div id="arwen_chart_evolution" class="arwen_chart_evolution"></div>
+</div>
 
 <div id="arwen_bar_set" class="arwen_bar_set">
     <div id="arwen_min" class="arwen_min"></div>
@@ -73,4 +92,5 @@
 
 </body>
 </html>
+
 
