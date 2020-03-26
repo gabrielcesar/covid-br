@@ -33,6 +33,7 @@ var chart_evolution_svg = `
     <g id="lines"></g>
     <path id="chart_path_death" class="chart_path" transform="" stroke="#ff9595" d="" />
     <path id="chart_path_confirmed" class="chart_path" transform="" stroke="orange" d="" />
+
     <g id="rects"></g>
 </svg>
 </center>
