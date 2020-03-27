@@ -43,7 +43,6 @@ fetch("https://gabrielcesar.github.io/covid-br/data/covid.json")
         
         document.getElementById(state['state']).addEventListener("mouseout", () => { tooltip_close() })
         document.getElementById('arwen_menu').innerHTML += '<div class=\'arwen_item\'><div class=\'arwen_icon arwen_flag_' + state['code'] + '\'></div>' + state['state'] + '<div class=\'arwen_amount arwen_death\'>' + state['death'] + '</div><div class=\'arwen_amount arwen_confirmed\'>' + state['confirmed'] + '</div></div>'
-        document.getElementById('arwen_menu_right').innerHTML += '<div class=\'arwen_item\'><div class=\'arwen_icon arwen_flag_' + state['code'] + '\'></div>' + state['state'] + '<div class=\'arwen_amount\'>' + state['death'] + '</div></div>'
         document.getElementById(state['state']).style.fill = colors[stateIndex]
     }
     
@@ -70,8 +69,11 @@ fetch("https://raw.githubusercontent.com/gabrielcesar/covid-br/master/data/evolu
 .then(response => response.json())
 .then((data) => {
     document.getElementById('arwen_chart_evolution').innerHTML = chart_evolution_svg 
+    document.getElementById('arwen_chart_daily_evolution').innerHTML = chart_evolution_svg 
 
-    var chart_width = 220
+    console.log(data)
+
+    var chart_width = 238
     var chart_height = 140
     var path_d_confirmed = 'M 0 0 ' 
     var path_d_death = 'M 0 0 ' 
@@ -83,11 +85,11 @@ fetch("https://raw.githubusercontent.com/gabrielcesar/covid-br/master/data/evolu
     for (let day in data) 
     {
         let path_d_confirmed_x = (parseInt(day) + 1) * (chart_width / data.length)
-        let path_d_confirmed_y = data[day]['confirmed'] * (chart_height / data[data.length - 1]['confirmed'])
+        let path_d_confirmed_y = data[day]['confirmed_accumulated'] * (chart_height / data[data.length - 1]['confirmed_accumulated'])
         path_d_confirmed += path_d_confirmed_x + ' ' + path_d_confirmed_y + ' '
 
         let path_d_death_x = (parseInt(day) + 1) * (chart_width / data.length)
-        let path_d_death_y = data[day]['death'] * (chart_height / data[data.length - 1]['confirmed'])
+        let path_d_death_y = data[day]['death_accumulated'] * (chart_height / data[data.length - 1]['confirmed_accumulated'])
         path_d_death += path_d_death_x + ' ' + path_d_death_y + ' '
 
         let line_x = '<path style="fill: none; stroke-width: 1;" stroke="#2b2c26" d="M ' + path_d_confirmed_x + ' 0 ' + path_d_confirmed_x + ' ' + chart_height + '" />'
@@ -96,13 +98,12 @@ fetch("https://raw.githubusercontent.com/gabrielcesar/covid-br/master/data/evolu
         let line_y = '<path style="fill: none; stroke-width: 1;" stroke="#2b2c26" d="M 0 ' + (chart_height / data.length) * day + ' ' + chart_width + ' ' + (chart_height / data.length) * day + '"/>'
         document.getElementById('lines').innerHTML += line_y
 
-        let rect = '<rect style="width: ' + (chart_width / data.length) + 'px; height: 100%; fill: transparent; x: ' + parseInt(day) * (chart_width / data.length) + 'px; y: 0px; opacity: 0.3;" onmouseover="chart_evolution_label(\'' + data[day]['date'] + '\', ' + data[day]['confirmed'] + ', ' + data[day]['death'] + ')"/>'
+        let rect = '<rect style="width: ' + (chart_width / data.length) + 'px; height: 100%; fill: transparent; x: ' + parseInt(day) * (chart_width / data.length) + 'px; y: 0px; opacity: 0.3;" onmouseover="chart_evolution_label(\'' + data[day]['date'] + '\', ' + data[day]['confirmed_accumulated'] + ', ' + data[day]['death_accumulated'] + ')"/>'
         document.getElementById('rects').innerHTML += rect
     }
 
     document.getElementById('chart_path_confirmed').setAttribute("transform", 'scale(1, -1) translate(0, -' + chart_height + ')')
     document.getElementById('chart_path_confirmed').setAttribute('d', path_d_confirmed)
-
     document.getElementById('chart_path_death').setAttribute("transform", 'scale(1, -1) translate(0, -' + chart_height + ')')
     document.getElementById('chart_path_death').setAttribute('d', path_d_death)
 })
