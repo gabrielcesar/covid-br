@@ -1,9 +1,9 @@
-var chart_evolution_svg = `
+var chart_daily_evolution_svg = `
 <center>
 <svg 
     xmlns:svg="http://www.w3.org/2000/svg"
     xmlns="http://www.w3.org/2000/svg"
-    id="chart" 
+    id="chart_daily" 
     preserveAspectRatio="none"
     style="
         background-color: transparent;
@@ -17,8 +17,8 @@ var chart_evolution_svg = `
                 fill: none; 
                 stroke-linecap: round;
                 stroke-width: 1; 
-                stroke-dasharray: 512;
-                stroke-dashoffset: 512;
+                stroke-dasharray: 1024;
+                stroke-dashoffset: 1024;
                 animation: chart_path_animation 5s linear forwards;
             }
 
@@ -30,11 +30,11 @@ var chart_evolution_svg = `
         </style>
     </defs>
 
-    <g id="lines"></g>
-    <path id="chart_path_death" class="chart_path" transform="" stroke="#ff9595" d="" />
-    <path id="chart_path_confirmed" class="chart_path" transform="" stroke="orange" d="" />
+    <g id="daily_lines"></g>
+    <path id="daily_chart_path_death" class="chart_path" transform="" stroke="#ff9595" d="" />
+    <path id="daily_chart_path_confirmed" class="chart_path" transform="" stroke="orange" d="" />
 
-    <g id="rects"></g>
+    <g id="daily_rects"></g>
 </svg>
 </center>
 `

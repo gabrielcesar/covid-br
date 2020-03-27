@@ -25,6 +25,27 @@ pre
     font-size: 13px;
 }
 
+
+::-webkit-scrollbar
+{
+    -webkit-background-color: #333;
+    background-color: #333;
+}
+
+::-webkit-scrollbar-thumb
+{
+    -webkit-background-color: #444;
+    background-color: #444;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    width: 8px;
+    -webkit-width: 8px;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+    -webkit-opacity: 0.5;
+    opacity: 0.5;
+}
+
 .arwen_about
 {
     color: #999;
@@ -93,8 +114,6 @@ pre
 	top: 60px;
 	width: 128px;
 }
-
-
 
 .arwen_box_right
 {
@@ -329,7 +348,6 @@ pre
     position: relative; 
     float: left;
     height: calc(24px + 142px);
-    width: 220px;
     width: 100%;
     z-index: 1;
 }
@@ -454,7 +472,16 @@ pre
         width: 100%;
     }
 
-    .arwen_box_left
+    .arwen_box_left_confirmed
+    { 
+        float: left;
+        position: relative; 
+        left: 0;
+        width: 50%;
+        top: 0;
+    }
+
+    .arwen_box_left_death
     { 
         float: left;
         position: relative; 
@@ -471,16 +498,6 @@ pre
         position: relative; 
         width: 100%;
         top: 0;
-    }
-
-    .arwen_box_right
-    { 
-        border-left: 0;
-        float: left;
-        left: 0;
-        position: relative; 
-        top: 0;
-        width: 50%;
     }
 
     .arwen_update 
@@ -515,7 +532,7 @@ pre
         width: 100%;
     }
 
-    .arwen_chart_evolution_set
+    .arwen_menu_right 
     {
         position: relative;
         float: left;
@@ -533,8 +550,8 @@ pre
         height: auto;
     }
 
+    .arwen_box_right { display: none; }
     .arwen_footer { display: none; }
-    .arwen_menu_right { display: none; }
 
     .arwen_bar_set 
     { 
