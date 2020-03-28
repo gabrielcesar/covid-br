@@ -68,3 +68,10 @@ Sua colaboração é sempre Bem Vinda!
 ## Agradecimentos
 * [Python Brazil Group](https://www.facebook.com/groups/pythonbr/)  
 * [Força-tarefa em TI: Coronavirus COVID-19](https://www.facebook.com/groups/coronaviruscplp/)
+
+
+## Please also visit
+### COVID-19
+![COVID](https://raw.githubusercontent.com/gabrielcesar/covid/master/images/covid.png)
+Corona Virus - Covid 19 around the world. - [gabrielcesar.github.io/covid-br/](https://gabrielcesar.github.io/covid/)  
+ 
