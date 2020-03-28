@@ -70,8 +70,8 @@ Sua colaboração é sempre Bem Vinda!
 * [Força-tarefa em TI: Coronavirus COVID-19](https://www.facebook.com/groups/coronaviruscplp/)
 
 
-## Please also visit
+## Visite também
 ### COVID-19
 ![COVID](https://raw.githubusercontent.com/gabrielcesar/covid/master/images/covid.png)
-Corona Virus - Covid 19 around the world. - [gabrielcesar.github.io/covid/](https://gabrielcesar.github.io/covid/)  
+Corona Virus - Covid 19 status mundial. - [gabrielcesar.github.io/covid/](https://gabrielcesar.github.io/covid/)  
  
