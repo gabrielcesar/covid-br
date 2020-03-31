@@ -69,9 +69,11 @@ Sua colaboração é sempre Bem Vinda!
 * [Python Brazil Group](https://www.facebook.com/groups/pythonbr/)  
 * [Força-tarefa em TI: Coronavirus COVID-19](https://www.facebook.com/groups/coronaviruscplp/)
 
-
 ## Visite também
 ### COVID-19
 ![COVID](https://raw.githubusercontent.com/gabrielcesar/covid/master/images/covid.png)
 Corona Virus - Covid 19 status mundial. - [gabrielcesar.github.io/covid/](https://gabrielcesar.github.io/covid/)  
  
+## Buy me a coffee
+[![Buy me a coffee](https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg)](https://www.buymeacoffee.com/gabrielcesar)  
+[buymeacoffee.com/gabrielcesar](https://www.buymeacoffee.com/gabrielcesar)
