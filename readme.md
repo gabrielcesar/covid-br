@@ -76,4 +76,4 @@ Corona Virus - Covid 19 status mundial. - [gabrielcesar.github.io/covid/](https:
  
 ## Buy me a coffee
 [![Buy me a coffee](https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg)](https://www.buymeacoffee.com/gabrielcesar)  
-[buymeacoffee.com/gabrielcesar](https://www.buymeacoffee.com/gabrielcesar)
+[buymeacoff.ee/gabrielcesar](https://www.buymeacoffee.com/gabrielcesar)
