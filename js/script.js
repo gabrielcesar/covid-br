@@ -2,7 +2,7 @@
 * 20200321
 * Gabriel Cesar
 * gabrielcesar2@gmail.com
-*/
+*/ 
 
 var colors = [
     '#ff998f', '#ffa184', '#ffa979', '#ffb06e', '#ffb863', 
@@ -12,6 +12,16 @@ var colors = [
     '#def147', '#d9ef51', '#d4ed5b', '#d0eb65', '#cbe96f', 
     '#c6e779', '#c1e583'
 ]
+
+var states = [{
+    AC: 'Acre', AL: 'Alagoas', AP: 'Amapá', AM: 'Amazonas', 
+    BA: 'Bahia', CE: 'Ceará', DF: 'Distrito Federal', ES: 'Espírito Santo', 
+    GO: 'Goiás', MA: 'Maranhão', MT: 'Mato Grosso', MS: 'Mato Grosso do Sul', 
+    MG: 'Minas Gerais', PA: 'Pará', PB: 'Paraíba', PR: 'Paraná', 
+    PE: 'Pernambuco', PI: 'Piauí', RJ: 'Rio de Janeiro', RN: 'Rio Grande do Norte',  
+    RS: 'Rio Grande do Sul',  RO: 'Rondônia',  RR: 'Roraima',  SC: 'Santa Catarina', 
+    SP: 'São Paulo', SE: 'Sergipe',  TO: 'Tocantins' 
+}]
 
 tooltip = (event, label) => {
     document.getElementById('arwen_tooltip').innerHTML = label
@@ -30,42 +40,44 @@ chart_daily_evolution_label = (date, confirmed, death) => {
     document.getElementById('arwen_chart_daily_evolution_label').innerHTML = date + ' &bull; Confirmados: <span class=\'arwen_color_orange arwen_font_size_10\'>' + confirmed + '</span> &bull; Mortes: <span class=\'arwen_color_red arwen_font_size_10\'>' + death + '</span>'
 }
 
-fetch("https://gabrielcesar.github.io/covid-br/data/covid.json")
+var total_confirmed = 0
+var total_deaths = 0
+
+fetch("https://brasil.io/api/dataset/covid19/caso/data?place_type=state&is_last=True")
 .then(response => response.json())
 .then((data) => {
+
+    data = data['results']
     data.sort((a, b) => parseInt(a.confirmed) < parseInt(b.confirmed) ? 1 : -1);
     document.getElementById('arwen_main').innerHTML = stateBorders
     
-    for (let stateIndex in data) 
+    for (let index in data)
     {
-        let state = data[stateIndex];
+        let state = data[index]['state']
+        let confirmed = data[index]['confirmed']
+        let deaths = data[index]['deaths']
+        let updated_at = data[0]['date']
 
-        document.getElementById(state['state']).addEventListener("mousemove", () => {
-            tooltip(event, '<div class=\'arwen_icon_tooltip arwen_flag_' + state['code'] + '\'></div><span id=\'arwen_tooltip_label\'>' + state['state'] + "</span><br>Confirmados <span class='arwen_color_orange'>" + state['confirmed'] + "</span><br>Mortes <span class='arwen_color_red'>" + state['death'] + "</span>")
-            document.getElementById('arwen_tooltip_label').style.color = colors[stateIndex]
+        document.getElementById(states[0][state]).addEventListener("mousemove", () => {
+            tooltip(event, '<div class=\'arwen_icon_tooltip arwen_flag_' + state + '\'></div><span id=\'arwen_tooltip_label\'>' + states[0][state] + "</span><br>Confirmados <span class='arwen_color_orange'>" + confirmed + "</span><br>Mortes <span class='arwen_color_red'>" + deaths + "</span>")
+            document.getElementById('arwen_tooltip_label').style.color = colors[index]
         })
         
-        document.getElementById(state['state']).addEventListener("mouseout", () => { tooltip_close() })
-        document.getElementById('arwen_menu').innerHTML += '<div class=\'arwen_item\'><div class=\'arwen_icon arwen_flag_' + state['code'] + '\'></div>' + state['state'] + '<div class=\'arwen_amount arwen_death\'>' + state['death'] + '</div><div class=\'arwen_amount arwen_confirmed\'>' + state['confirmed'] + '</div></div>'
-        document.getElementById(state['state']).style.fill = colors[stateIndex]
+        document.getElementById(states[0][state]).addEventListener("mouseout", () => { tooltip_close() })
+        document.getElementById('arwen_menu').innerHTML += '<div class=\'arwen_item\'><div class=\'arwen_icon arwen_flag_' + state + '\'></div>' + states[0][state] + '<div class=\'arwen_amount arwen_death\'>' + deaths + '</div><div class=\'arwen_amount arwen_confirmed\'>' + confirmed + '</div></div>'
+        document.getElementById(states[0][state]).style.fill = colors[index]
+        document.getElementById('last_update_date').innerHTML = updated_at
+
+        total_confirmed += confirmed
+        total_deaths += deaths
     }
     
     document.getElementById('arwen_min').innerHTML = data[data.length - 1]['confirmed']
     document.getElementById('arwen_max').innerHTML = data[0]['confirmed']
-})
-
-// general
-fetch("https://raw.githubusercontent.com/gabrielcesar/covid-br/master/data/general.json")
-.then(response => response.json())
-.then((data) => {
-    //document.getElementById('total_suspect').innerHTML = data['total_suspect']
-    document.getElementById('total_confirmed').innerHTML = data['total_confirmed']
-    //document.getElementById('total_recovered').innerHTML = data['total_recovered']
-    document.getElementById('total_death').innerHTML = data['total_death']
-    document.getElementById('box_total_confirmed').innerHTML = data['total_confirmed']
-    document.getElementById('box_total_death').innerHTML = data['total_death']
-    document.getElementById('last_update_date').innerHTML = data['last_update_date']
-    document.getElementById('last_update_time').innerHTML = data['last_update_time']
+    document.getElementById('total_confirmed').innerHTML = total_confirmed
+    document.getElementById('total_death').innerHTML = total_deaths
+    document.getElementById('box_total_confirmed').innerHTML = total_confirmed
+    document.getElementById('box_total_death').innerHTML = total_deaths
 })
 
 // chart_evolution
@@ -149,6 +161,4 @@ fetch("https://raw.githubusercontent.com/gabrielcesar/covid-br/master/data/evolu
     document.getElementById('daily_chart_path_death').setAttribute("transform", 'scale(1, -1) translate(0, -' + chart_height + ')')
     document.getElementById('daily_chart_path_death').setAttribute('d', path_d_death)
 })
-
-
 
