@@ -50,5 +50,6 @@
      { "date": "05/04/2020", "confirmed_daily": 852, "confirmed_accumulated": 11130, "death_daily": 54, "death_accumulated": 486},
 
      { "date": "06/04/2020", "confirmed_daily": 926, "confirmed_accumulated": 12056, "death_daily": 67, "death_accumulated": 553},
-     { "date": "07/04/2020", "confirmed_daily": 1661, "confirmed_accumulated": 13717, "death_daily": 114, "death_accumulated": 667}
+     { "date": "07/04/2020", "confirmed_daily": 1661, "confirmed_accumulated": 13717, "death_daily": 114, "death_accumulated": 667},
+     { "date": "08/04/2020", "confirmed_daily": 2210, "confirmed_accumulated": 15927, "death_daily": 133, "death_accumulated": 800}
 ] 

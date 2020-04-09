@@ -1,7 +1,7 @@
 /*
 * 20200321
-* Gabriel Cesar
-* gabrielcesar2@gmail.com
+* Gabriel Cesar - github.com/gabrielcesar
+* Helton Biker - github.com/heltonbiker
 */ 
 
 var colors = [
