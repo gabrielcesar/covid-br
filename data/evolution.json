@@ -51,5 +51,12 @@
 
      { "date": "06/04/2020", "confirmed_daily": 926, "confirmed_accumulated": 12056, "death_daily": 67, "death_accumulated": 553},
      { "date": "07/04/2020", "confirmed_daily": 1661, "confirmed_accumulated": 13717, "death_daily": 114, "death_accumulated": 667},
-     { "date": "08/04/2020", "confirmed_daily": 2210, "confirmed_accumulated": 15927, "death_daily": 133, "death_accumulated": 800}
+     { "date": "08/04/2020", "confirmed_daily": 2210, "confirmed_accumulated": 15927, "death_daily": 133, "death_accumulated": 800},
+     { "date": "09/04/2020", "confirmed_daily": 1930, "confirmed_accumulated": 17857, "death_daily": 141, "death_accumulated": 941},
+     { "date": "10/04/2020", "confirmed_daily": 1781, "confirmed_accumulated": 19638, "death_daily": 115, "death_accumulated": 1056},
+
+     { "date": "11/04/2020", "confirmed_daily": 1089, "confirmed_accumulated": 20727, "death_daily": 68, "death_accumulated": 1124},
+     { "date": "12/04/2020", "confirmed_daily": 1442, "confirmed_accumulated": 22169, "death_daily": 99, "death_accumulated": 1223},
+     { "date": "13/04/2020", "confirmed_daily": 1261, "confirmed_accumulated": 23430, "death_daily": 105, "death_accumulated": 1328},
+     { "date": "14/04/2020", "confirmed_daily": 1832, "confirmed_accumulated": 25262, "death_daily": 204, "death_accumulated": 1532}
 ] 
