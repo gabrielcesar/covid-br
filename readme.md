@@ -23,6 +23,16 @@ Sua colaboração é sempre Bem Vinda!
 * Brasil.io - COVID-19  
 [brasil.io/dataset/covid19/caso](https://brasil.io/dataset/covid19/caso)
 
+## Como disponibilizar este mapa no meu Site/Blog/App?  
+A maneira mais simples é através do uso de um ```<iframe>```. Exemplo:
+
+```
+<iframe 
+    src="https://gabrielcesar.github.io/covid"
+    style="border: 0; width: 100%; height: 512px;"
+></iframe>
+```
+
 ## Resources
 * [Brazil Labelled Map](https://en.wikipedia.org/wiki/States_of_Brazil#/media/File:Brazil_Labelled_Map.svg)
 * [Biohazard](https://en.wikipedia.org/wiki/Biological_hazard#/media/File:Biohazard_symbol_(black_and_yellow).png)
